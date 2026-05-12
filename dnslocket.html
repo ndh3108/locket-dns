@@ -3,126 +3,280 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Private DNS - Locket Gold</title>
+    <title>Locket Gold VIP - Duy Hoài Galaxy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-        background-color: #0f172a;
+        background-color: #020617;
         color: white;
         font-family: "Inter", sans-serif;
+        background-image:
+          radial-gradient(circle at 20% 30%, #1e3a8a 0%, transparent 40%),
+          radial-gradient(circle at 80% 70%, #1d4ed8 0%, transparent 40%),
+          radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%);
+        overflow-x: hidden;
       }
-      .card {
-        background-color: white;
-        color: #1e293b;
-        border-radius: 1.5rem;
+      .galaxy-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(59, 130, 246, 0.2);
+        backdrop-filter: blur(15px);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .galaxy-card:hover {
+        border-color: #60a5fa;
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.4);
+      }
+      .btn-galaxy {
+        background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+      }
+      .btn-galaxy:hover {
+        box-shadow: 0 0 25px rgba(96, 165, 250, 0.5);
+        filter: brightness(1.1);
       }
       .step-num {
-        background-color: #e0e7ff;
-        color: #4f46e5;
-        width: 24px;
-        height: 24px;
+        background: #2563eb;
+        color: white;
+        width: 26px;
+        height: 26px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.75rem;
-        font-weight: bold;
+        font-size: 0.8rem;
+        font-weight: 900;
+        box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+      }
+      .hidden-section {
+        display: none;
+      }
+      .text-galaxy {
+        background: linear-gradient(to right, #60a5fa, #a78bfa, #60a5fa);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s linear infinite;
+      }
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
       }
     </style>
   </head>
-  <body class="flex flex-col items-center justify-center min-h-screen p-4">
-    <div class="text-center mb-8">
-      <div
-        class="bg-blue-600 w-16 h-16 rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-lg"
-      >
-        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
-        </svg>
-      </div>
-      <h1 class="text-3xl font-bold mb-2">Private DNS - Duy Hoài</h1>
-      <p class="text-gray-400">
-        Bảo mật quyền riêng tư và tối ưu hóa kết nối mạng.
-      </p>
-    </div>
-
-    <div class="card w-full max-w-md p-8 shadow-2xl relative">
-      <div class="flex justify-between items-start mb-6">
-        <div>
-          <h2 class="text-xl font-bold">Hồ sơ Cấu hình</h2>
-          <p class="text-sm text-gray-500">Mã: Locket-Gold-VIP</p>
-        </div>
+  <body class="min-h-screen flex flex-col items-center justify-center p-6">
+    <div
+      id="home-page"
+      class="w-full max-w-4xl flex flex-col items-center animate-fade-in"
+    >
+      <div class="text-center mb-12">
         <span
-          class="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded"
-          >SẴN SÀNG</span
+          class="bg-blue-500/10 text-blue-400 text-[10px] font-black px-5 py-2 rounded-full border border-blue-500/30 uppercase tracking-[0.3em]"
         >
+          Galaxy Premium Experience
+        </span>
+        <h1 class="text-6xl md:text-7xl font-black mt-8 mb-6 tracking-tighter">
+          Locket <span class="text-galaxy">Gold</span>
+        </h1>
+        <p class="text-blue-200/50 text-lg max-w-lg mx-auto">
+          Sở hữu đặc quyền tối thượng giữa dải ngân hà Duy Hoài.
+        </p>
       </div>
 
-      <div class="space-y-6 mb-8">
-        <div class="flex gap-4">
-          <span class="step-num flex-shrink-0">1</span>
-          <p class="text-sm">
-            Nhấn <b>Tải về</b> và chọn <b>Cho phép</b> khi có thông báo hệ
-            thống.
-          </p>
-        </div>
-        <div class="flex gap-4">
-          <span class="step-num flex-shrink-0">2</span>
-          <p class="text-sm">Vào <b>Cài đặt</b> > <b>Đã tải về hồ sơ</b>.</p>
-        </div>
-        <div class="flex gap-4">
-          <span class="step-num flex-shrink-0">3</span>
-          <p class="text-sm">
-            Chọn <b>Locket Gold by Duy Hoài</b> và nhấn <b>Cài đặt</b>.
-          </p>
-        </div>
-      </div>
-
-      <a
-        href="ndh.mobileconfig"
-        class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-4 rounded-xl transition shadow-lg mb-4"
-      >
-        📥 Tải về ngay
-      </a>
-
-      <p
-        class="text-center text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wider"
-      >
-        Cần hỗ trợ kỹ thuật?
-      </p>
-
-      <div class="grid grid-cols-2 gap-3">
-        <a
-          href="https://www.facebook.com/nguyen.duyhoai.733"
-          target="_blank"
-          class="flex items-center justify-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 text-[13px] font-bold py-3 rounded-xl transition border border-blue-100"
-        >
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path
-              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-            />
-          </svg>
-          Facebook
-        </a>
-
-        <a
-          href="https://zalo.me/0925528709"
-          target="_blank"
-          class="flex items-center justify-center gap-2 bg-sky-50 hover:bg-sky-100 text-sky-700 text-[13px] font-bold py-3 rounded-xl transition border border-sky-100"
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+        <div
+          class="galaxy-card p-10 rounded-[3rem] flex flex-col items-center text-center"
         >
           <div
-            class="w-4 h-4 bg-sky-600 rounded-full flex items-center justify-center text-[10px] text-white font-black italic"
+            class="w-20 h-20 bg-blue-600/10 rounded-3xl flex items-center justify-center mb-8 border border-blue-500/20"
           >
-            Z
+            <svg
+              class="w-10 h-10 text-blue-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+              ></path>
+            </svg>
           </div>
-          Zalo Chat
-        </a>
-      </div>
+          <h2 class="text-3xl font-bold mb-3 text-blue-50">Locket qua DNS</h2>
+          <p class="text-blue-300/40 text-sm mb-10 leading-relaxed">
+            Kết nối trực tiếp tới dải ngân hà. Đơn giản, nhanh chóng, không cần
+            cài app phụ.
+          </p>
+          <button
+            onclick="showDNS()"
+            class="btn-galaxy w-full py-5 rounded-2xl font-black text-white uppercase tracking-widest transition"
+          >
+            Bắt đầu ngay →
+          </button>
+        </div>
 
-      <p
-        class="text-center text-[10px] text-gray-400 mt-6 font-bold tracking-widest uppercase"
-      >
-        Hỗ trợ iOS, iPadOS và macOS
-      </p>
+        <div
+          class="galaxy-card p-10 rounded-[3rem] flex flex-col items-center text-center"
+        >
+          <div
+            class="w-20 h-20 bg-indigo-600/10 rounded-3xl flex items-center justify-center mb-8 border border-indigo-500/20"
+          >
+            <svg
+              class="w-10 h-10 text-indigo-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+          <h2 class="text-3xl font-bold mb-3 text-indigo-50">
+            Locket qua Shadowrocket
+          </h2>
+          <p class="text-indigo-300/40 text-sm mb-10 leading-relaxed">
+            Sức mạnh vượt không gian. Sao chép link và dán vào Shadowrocket để
+            kích hoạt ổn định tuyệt đối.
+          </p>
+          <button
+            id="copy-btn"
+            onclick="copyModuleURL()"
+            class="bg-white/5 hover:bg-white/10 w-full py-5 rounded-2xl font-black text-white uppercase tracking-widest border border-white/10 transition"
+          >
+            Sao chép Module
+          </button>
+        </div>
+      </div>
     </div>
+
+    <div id="dns-page" class="hidden-section w-full max-w-md">
+      <div
+        class="galaxy-card p-10 rounded-[3.5rem] shadow-2xl relative border-blue-400/30"
+      >
+        <div class="text-center mb-10">
+          <div
+            class="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-[0_0_30px_rgba(37,99,235,0.6)]"
+          >
+            <svg
+              class="w-8 h-8 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+              ></path>
+            </svg>
+          </div>
+          <h1 class="text-3xl font-black text-blue-50">Private DNS</h1>
+          <p class="text-blue-400/60 text-xs mt-2 uppercase tracking-tighter">
+            Bảo mật đa tầng • Duy Hoài Galaxy
+          </p>
+        </div>
+
+        <div class="space-y-8 mb-10">
+          <div class="flex gap-5 items-center">
+            <span class="step-num flex-shrink-0">1</span>
+            <p class="text-sm text-blue-100/80">
+              Nhấn <b>Tải về</b> và <b>Cho phép</b> cấu hình.
+            </p>
+          </div>
+          <div class="flex gap-5 items-center">
+            <span class="step-num flex-shrink-0">2</span>
+            <p class="text-sm text-blue-100/80">
+              Mở <b>Cài đặt</b> > <b>Hồ sơ đã tải về</b>.
+            </p>
+          </div>
+          <div class="flex gap-5 items-center">
+            <span class="step-num flex-shrink-0">3</span>
+            <p class="text-sm text-blue-100/80">
+              Cài đặt <b>Locket Gold by Duy Hoài</b>.
+            </p>
+          </div>
+        </div>
+
+        <a
+          href="ndh.mobileconfig"
+          class="btn-galaxy block w-full text-center py-5 rounded-2xl font-black text-white uppercase tracking-tighter mb-6 shadow-xl shadow-blue-600/30"
+          >📥 Tải về ngay</a
+        >
+
+        <div class="grid grid-cols-2 gap-4">
+          <a
+            href="https://www.facebook.com/nguyen.duyhoai.733"
+            target="_blank"
+            class="flex items-center justify-center bg-white/5 hover:bg-white/10 text-white text-[11px] font-bold py-4 rounded-2xl border border-white/5 transition uppercase"
+            >Facebook</a
+          >
+          <a
+            href="https://zalo.me/0925528709"
+            target="_blank"
+            class="flex items-center justify-center bg-white/5 hover:bg-white/10 text-white text-[11px] font-bold py-4 rounded-2xl border border-white/5 transition uppercase"
+            >Zalo Chat</a
+          >
+        </div>
+
+        <button
+          onclick="showHome()"
+          class="w-full mt-10 text-[10px] text-blue-500/50 hover:text-blue-400 transition uppercase font-black tracking-widest"
+        >
+          ← Quay về trái đất
+        </button>
+      </div>
+    </div>
+
+    <footer
+      class="mt-16 text-[10px] text-blue-400/30 font-black tracking-[0.4em] uppercase"
+    >
+      Galaxy OS • Designed by Duy Hoai • 2026
+    </footer>
+
+    <script>
+      function showDNS() {
+        document.getElementById("home-page").style.display = "none";
+        document.getElementById("dns-page").style.display = "block";
+      }
+      function showHome() {
+        document.getElementById("dns-page").style.display = "none";
+        document.getElementById("home-page").style.display = "flex";
+      }
+
+      // Hàm xử lý Sao chép URL
+      function copyModuleURL() {
+        const url =
+          "https://raw.githubusercontent.com/ndh3108/locket-dns/main/locketgold.conf";
+        navigator.clipboard
+          .writeText(url)
+          .then(() => {
+            const btn = document.getElementById("copy-btn");
+            const originalText = btn.innerText;
+
+            // Hiệu ứng phản hồi cho người dùng
+            btn.innerText = "✅ ĐÃ SAO CHÉP";
+            btn.style.color = "#60a5fa";
+            btn.style.borderColor = "#60a5fa";
+
+            setTimeout(() => {
+              btn.innerText = originalText;
+              btn.style.color = "white";
+              btn.style.borderColor = "rgba(255, 255, 255, 0.1)";
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Lỗi copy: ", err);
+            alert("Không thể sao chép, vui lòng thử lại!");
+          });
+      }
+    </script>
   </body>
 </html>
