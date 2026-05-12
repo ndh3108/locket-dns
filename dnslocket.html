@@ -1,53 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Private DNS - Locket Gold</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: white; font-family: 'Inter', sans-serif; }
-        .card { background-color: white; color: #1e293b; border-radius: 1.5rem; }
-        .step-num { background-color: #e0e7ff; color: #4f46e5; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; }
+      body {
+        background-color: #0f172a;
+        color: white;
+        font-family: "Inter", sans-serif;
+      }
+      .card {
+        background-color: white;
+        color: #1e293b;
+        border-radius: 1.5rem;
+      }
+      .step-num {
+        background-color: #e0e7ff;
+        color: #4f46e5;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body class="flex flex-col items-center justify-center min-h-screen p-4">
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen p-4">
     <div class="text-center mb-8">
-        <div class="bg-blue-600 w-16 h-16 rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
-        </div>
-        <h1 class="text-3xl font-bold mb-2">Private DNS - by Duy Hoài</h1>
-        <p class="text-gray-400">Bảo mật quyền riêng tư và tối ưu hóa kết nối mạng.</p>
+      <div
+        class="bg-blue-600 w-16 h-16 rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-lg"
+      >
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+      </div>
+      <h1 class="text-3xl font-bold mb-2">Private DNS - Duy Hoài</h1>
+      <p class="text-gray-400">
+        Bảo mật quyền riêng tư và tối ưu hóa kết nối mạng.
+      </p>
     </div>
 
     <div class="card w-full max-w-md p-8 shadow-2xl relative">
-        <div class="flex justify-between items-start mb-6">
-            <div>
-                <h2 class="text-xl font-bold">Hồ sơ Cấu hình</h2>
-                <p class="text-sm text-gray-500">Mã: Locket-Gold-VIP</p>
-            </div>
-            <span class="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded">SẴN SÀNG</span>
+      <div class="flex justify-between items-start mb-6">
+        <div>
+          <h2 class="text-xl font-bold">Hồ sơ Cấu hình</h2>
+          <p class="text-sm text-gray-500">Mã: Locket-Gold-VIP</p>
         </div>
+        <span
+          class="bg-green-100 text-green-600 text-xs font-bold px-2 py-1 rounded"
+          >SẴN SÀNG</span
+        >
+      </div>
 
-        <div class="space-y-6 mb-8">
-            <div class="flex gap-4">
-                <span class="step-num flex-shrink-0">1</span>
-                <p class="text-sm">Nhấn <b>Tải về</b> và chọn <b>Cho phép</b> khi có thông báo hệ thống.</p>
-            </div>
-            <div class="flex gap-4">
-                <span class="step-num flex-shrink-0">2</span>
-                <p class="text-sm">Vào <b>Cài đặt</b> > <b>Đã tải về hồ sơ</b>.</p>
-            </div>
-            <div class="flex gap-4">
-                <span class="step-num flex-shrink-0">3</span>
-                <p class="text-sm">Chọn <b>LocketGold DNS</b> và nhấn <b>Cài đặt</b>.</p>
-            </div>
+      <div class="space-y-6 mb-8">
+        <div class="flex gap-4">
+          <span class="step-num flex-shrink-0">1</span>
+          <p class="text-sm">
+            Nhấn <b>Tải về</b> và chọn <b>Cho phép</b> khi có thông báo hệ
+            thống.
+          </p>
         </div>
+        <div class="flex gap-4">
+          <span class="step-num flex-shrink-0">2</span>
+          <p class="text-sm">Vào <b>Cài đặt</b> > <b>Đã tải về hồ sơ</b>.</p>
+        </div>
+        <div class="flex gap-4">
+          <span class="step-num flex-shrink-0">3</span>
+          <p class="text-sm">
+            Chọn <b>Locket Gold by Duy Hoài</b> và nhấn <b>Cài đặt</b>.
+          </p>
+        </div>
+      </div>
 
-        <a href="nms.mobileconfig" class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-4 rounded-xl transition shadow-lg">
-             📥 Tải về ngay
+      <a
+        href="ndh.mobileconfig"
+        class="block w-full bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold py-4 rounded-xl transition shadow-lg mb-4"
+      >
+        📥 Tải về ngay
+      </a>
+
+      <p
+        class="text-center text-xs text-gray-400 mb-3 font-semibold uppercase tracking-wider"
+      >
+        Cần hỗ trợ kỹ thuật?
+      </p>
+
+      <div class="grid grid-cols-2 gap-3">
+        <a
+          href="https://www.facebook.com/nguyen.duyhoai.733"
+          target="_blank"
+          class="flex items-center justify-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 text-[13px] font-bold py-3 rounded-xl transition border border-blue-100"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+            />
+          </svg>
+          Facebook
         </a>
-        <p class="text-center text-[10px] text-gray-400 mt-6 font-bold tracking-widest uppercase">Hỗ trợ iOS, iPadOS và macOS</p>
+
+        <a
+          href="https://zalo.me/0925528709"
+          target="_blank"
+          class="flex items-center justify-center gap-2 bg-sky-50 hover:bg-sky-100 text-sky-700 text-[13px] font-bold py-3 rounded-xl transition border border-sky-100"
+        >
+          <div
+            class="w-4 h-4 bg-sky-600 rounded-full flex items-center justify-center text-[10px] text-white font-black italic"
+          >
+            Z
+          </div>
+          Zalo Chat
+        </a>
+      </div>
+
+      <p
+        class="text-center text-[10px] text-gray-400 mt-6 font-bold tracking-widest uppercase"
+      >
+        Hỗ trợ iOS, iPadOS và macOS
+      </p>
     </div>
-</body>
+  </body>
 </html>
