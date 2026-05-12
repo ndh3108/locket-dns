@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://apple.dns.nextdns.io/f358a6/Duyhoai</string>
+            </dict>
+            <key>OnDemandRules</key>
+            <array>
+                <dict>
+                    <key>Action</key>
+                    <string>EvaluateConnection</string>
+                    <key>ActionParameters</key>
+                    <array>
+                        <dict>
+                            <key>DomainAction</key>
+                            <string>NeverConnect</string>
+                            <key>Domains</key>
+                            <array>
+                                <string>captive.apple.com</string>
+                                <string>3gppnetwork.org</string>
+                            </array>
+                        </dict>
+                    </array>
+                </dict>
+                <dict>
+                    <key>Action</key>
+                    <string>Connect</string>
+                </dict>
+            </array>
+            <key>PayloadDescription</key>
+            <string>Cấu hình DNS bảo mật - Tối ưu hóa bởi Duy Hoài</string>
+            <key>PayloadDisplayName</key>
+            <string>Locket Gold by Duy Hoài (DNS)</string>
+            <key>PayloadIdentifier</key>
+            <string>io.nextdns.f358a6.dns.ndh</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>B2C3D4E5-F6A7-4819-ABCD-1234567890FF</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>Hệ thống chặn thu hồi bản quyền và mở khóa tính năng Locket Gold.</string>
+    <key>PayloadDisplayName</key>
+    <string>Locket Gold by Duy Hoài</string>
+    <key>PayloadIdentifier</key>
+    <string>ndh.mobileconfig.profile</string>
+    <key>PayloadOrganization</key>
+    <string>Duy Hoài Digital</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>C1D2E3F4-G5H6-7890-ABCD-EF1234567890</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
